@@ -1,0 +1,283 @@
+html{
+    margin: 0;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: #1f1f1f;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    color: #1f1f1f;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-container--image{
+    width: 70%;
+    height: 100%;
+    padding: 4rem;
+}
+
+.flex-container--image img{
+    width: 90%;
+    height: 89%;
+    object-fit: contain;
+}
+
+.flex-container--content{
+    width: 30%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.content-actions {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9d9d9d;
+    font-size: 11px;
+    border-bottom: 0.8px solid #c1c1c1; /* Line below the Actions and Flag */
+    padding-bottom: 7px; /* Space between the text and the line */
+    margin-top: 4rem; /* Adjust as needed */
+    margin-right: 55px; /* Adjust this value to change the space */
+}
+
+
+.content-toggle--container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-toggle{
+    width: 50%;
+    text-align: center;
+    padding: 1rem 10.5rem;
+    margin-right: 58px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333333;
+}
+
+.content-toggle.active{
+    border-bottom: 0.5px solid #333333;
+    margin-top: 0.6rem;
+    font-size: 12px;
+}
+
+.content-connections{
+    margin-top: 1.5rem;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d4d4d;
+    font-size: 18px;
+    border-bottom: 0.5px solid #c1c1c1; 
+    padding-bottom: 25px; /* Adjust this value to change space between text and line */
+    margin-bottom: 15px; /* Adjust the space below the border */
+    margin-top: 55px;
+    display: inline-block;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9d9d9d;
+    font-size: 11px;
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Adjust this value as needed */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+.bold-flag {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #727272;
+    font-size: 12px;
+    margin-top: 5px; /* Reduce top margin */
+    margin-bottom: 4px; /* Reduce bottom margin */
+}
+.share-content{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #727272;
+    font-size: 11px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.box1 {
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding-right: 0px;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: white;
+    border: 1.9px solid rgb(222, 222, 222);
+    border-radius: 0.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    padding: 0.7em 3em;
+    color: rgb(88, 88, 88);
+    margin-right: 50px;
+    cursor:pointer;
+}
+.boxes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 40px;
+}
+.box2 {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+    text-align: left;
+    padding: 0.9em;
+    border-radius: 0.25em;
+}
+
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    padding: 1em;
+    border: 2px solid rgb(207, 203, 214);
+    color: rgb(75, 61, 103);
+    font-size: 14px;
+    cursor:pointer;
+}
+.box4 {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.33;
+    color: rgb(153, 153, 153);
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 0.25em;
+}
+.box5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    padding: 1em;
+    border: 2px solid rgb(207, 203, 214);
+    color: rgb(75, 61, 103);
+    font-size: 14px;
+    border-radius: 0.25em;
+    cursor:pointer;
+}
+.box6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0.34375em;
+    padding: 1em;
+    border: 2px solid rgb(207, 203, 214);
+    color: rgb(75, 61, 103);
+    font-size: 14px;
+    cursor:pointer;
+}
+.box7 {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.33;
+    color: rgb(153, 153, 153);
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 0.25em;
+}
+.box8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    padding: 1em;
+    border: 2px solid rgb(193, 233, 191);
+    color: rgb(23, 172, 16);
+    font-size: 14px;
+    cursor:pointer;
+}
+span{
+    margin-left: 8px;
+    font-size: 12px;
+}
+.text1 {
+    margin-left: 10px;
+    font-size: 12px;
+}
+.container {
+    position: relative;
+    height: 200px;
+}
+.corner-button {
+    position: absolute;
+    right: 200px;
+    margin-top: -683px; 
+    border: 1px solid #e3e3e3;
+    border-radius: 0.15em;
+    padding: 0.5em 1em;
+    background-color: white;
+    color: #a9a9a9;
+    cursor: pointer;
+    z-index:100;
+    font-size: 10px;
+    position: fixed;
+}
+.arrows {
+    font-size: 24px; /* Adjust based on your needs */
+    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    position: fixed; /* Changed from 'relative' to 'fixed' */
+    top: 7px; /* Position at the top of the viewport */
+    right: 70px; /* Position at the right of the viewport */
+    width: 50px; /* Container width */
+    height: 30px; /* Container height */
+    line-height: 30px; /* Aligns the symbol vertically */
+    text-align: center;
+    font-weight: -600;
+    cursor:pointer;
+}
+.arrows:before {
+    content: '< >'; /* Keep a single space between arrows */
+    position: absolute;
+    left: -40px;
+    font-size: 30px;
+    letter-spacing: 10px; /* Adjust as needed for spacing between arrows */
+}
+
+.arrows span {
+    display: inline-block; /* Ensures the span aligns correctly with the pseudo-element */
+    position: relative; /* Relative positioning to align with the :before content */
+    padding-left: 50px; /* Space between the arrow and the X */
+    font-size: 20px;
+    top: -1px;
+}
+
