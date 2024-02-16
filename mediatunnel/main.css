@@ -7,11 +7,117 @@ html{
 }
 
 body {
-    background-color: #1e1e1e;
-    backdrop-filter: blur(8px);
-    font-size: 1.3rem;
-    color: white;
+    font-size: 1.6rem;
     margin: 0;
-    padding: 5rem 2rem;
 }
 
+.flex-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.desktop-image--left,
+.desktop-image--right,
+.tablet-image--left,
+.tablet-image--right,
+.mobile-image--left,
+.mobile-image--right{
+    display: none;
+}
+
+.desktop-image--left{
+    width: 58.3%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.desktop-image--right{
+    width: 41.7%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.tablet-image--left{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    }
+    
+.tablet-image--right{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    }    
+
+.mobile-image--left{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    }
+        
+.mobile-image--right{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    }    
+    
+
+    
+@media screen and (max-width: 499px) {
+    .mobile-image--left,
+    .mobile-image--right{
+        display: block;
+    }
+    .flex-container {
+        flex-direction:column;
+        }
+    }
+
+@media screen and (min-width: 500px) and (max-width:949px){
+    .tablet-image--left,
+    .tablet-image--right{
+        display: block;
+    }
+
+    .flex-container {
+        flex-direction:column;
+        }
+    }
+
+@media screen and (min-width: 950px){
+    .desktop-image--left,
+    .desktop-image--right{
+        display: block;
+    }
+}
+
+.toggle-container {
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 52rem;
+    height: 19rem;
+    border: 1px solid white;
+    border-radius: 999rem;
+    background: transparent;
+    }
+
+.toggle-circle {
+    width: 17.7rem;
+    height: 17.7rem;
+    border-radius: 999rem;
+    background: rgba(0, 0, 0,.5);
+    position: absolute;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .5s ease;
+}
+
+.toggle-container.is-active {
+    .toggle-circle {
+    transform: translateY(-50%) translateX(32.8rem);
+    }
+}
