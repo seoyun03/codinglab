@@ -61,8 +61,36 @@ body {
     height: 70%;
     object-fit: cover;
     }    
-    
 
+
+    .toggle-container{
+        position: fixed;
+        right: 10px; /* Adjust as needed for the distance from the right */
+        top: 10px; /* Adjust as needed for the distance from the top */
+        width: 20rem; /* Smaller width */
+        height: 7rem; /* Smaller height */
+        border: 1px solid white;
+        background: transparent;
+        border-radius: 999rem; /* You might want to adjust this for a smaller size */
+    }
+    
+    .toggle-circle {
+        width: 5.4rem; /* Smaller width */
+        height: 5.4rem; /* Smaller height */
+        border-radius: 999rem; /* Keep it circular */
+        background: rgba(0, 0, 0,.5);
+        position: absolute;
+        left: .6.2rem; /* Adjust if needed */
+        top: 50%;
+        transform: translateY(-50%); /* Keeps it vertically centered */
+        transition: transform .5s ease;
+    }
+        
+    .toggle-container.is-active .toggle-circle {
+        transform: translateY(-50%) translateX(13rem); /* Adjust translation for new size */
+    }
+    
+    
     
 @media screen and (max-width: 499px) {
     .mobile-image--left,
@@ -71,7 +99,37 @@ body {
     }
     .flex-container {
         flex-direction:column;
+    }
+
+.toggle-container{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 19rem;
+        height: 52rem;
+        border: 1px solid white;
+        background: transparent;
+        border-radius: 999rem;
+    }
+    
+.toggle-circle {
+        width: 17.7rem;
+        height: 17.7rem;
+        border-radius: 999rem;
+        background: rgba(0, 0, 0,.5);
+        position: absolute;
+        left: 50%;
+        top: 0.5%;
+        transform: translateX(-50%);
+        transition: transform .5s ease;
+    }
+    
+    .toggle-container.is-active {
+        .toggle-circle {
+        transform: translateX(-50%) translateY(33.3rem);
         }
+    }
     }
 
 @media screen and (min-width: 500px) and (max-width:949px){
@@ -88,36 +146,6 @@ body {
 @media screen and (min-width: 950px){
     .desktop-image--left,
     .desktop-image--right{
-        display: block;
-    }
-}
-
-.toggle-container {
-    position:fixed;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 52rem;
-    height: 19rem;
-    border: 1px solid white;
-    border-radius: 999rem;
-    background: transparent;
-    }
-
-.toggle-circle {
-    width: 17.7rem;
-    height: 17.7rem;
-    border-radius: 999rem;
-    background: rgba(0, 0, 0,.5);
-    position: absolute;
-    left: .5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform .5s ease;
-}
-
-.toggle-container.is-active {
-    .toggle-circle {
-    transform: translateY(-50%) translateX(32.8rem);
+            display: block;
     }
 }
