@@ -37,33 +37,33 @@ button:hover {
 
 .btn2 {
     position: absolute; /* Change to absolute positioning */
-    top: 30vh;
-    left: 50%; /* Center horizontally */
+    top: 50vh;
+    left: 35%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    font-size: 18px;
-    background-color: yellow;
-    color: rebeccapurple;
+    font-size: 22px;
+    background-color: rgb(255, 0, 170);
+    color: rgb(251, 255, 0);
     padding: .25em;
 }
 
 .btn2:hover {
-    background-color: rebeccapurple;
-    color: yellow;
+    background-color: rgb(251, 255, 0);
+    color: rgb(255, 0, 170);
 }
 
 .btn3 {
     position: absolute; /* Change to absolute positioning */
-    top: 35vh; /* Adjust top position */
-    right: 2vw; /* Adjust right position */
-    font-size: 20px;
-    background-color: orange;
-    color: lightblue;
+    top: 39vh; /* Adjust top position */
+    right: 10vw; /* Adjust right position */
+    font-size: 30px;
+    background-color: rgb(255, 98, 0);
+    color: rgb(255, 255, 255);
     padding: .25em;
 }
 
 .btn3:hover {
-    background-color: lightblue;
-    color: orange;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 98, 0);
 }
 
 
@@ -110,6 +110,35 @@ button:hover {
         .flex-container {
             flex-direction: column;
         }
+        .btn1 {
+            position: absolute; /* Change to absolute positioning */
+            top: 29vh;
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            font-size: 6vw;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: .25em;
+        }
+        .btn2 {
+            position: absolute; /* Change to absolute positioning */
+            top: 50vh;
+            left: 35%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            font-size: 2.7vw;
+            background-color: rgb(255, 0, 170);
+            color: rgb(251, 255, 0);
+            padding: .25em;
+        }
+        .btn3 {
+            position: absolute; /* Change to absolute positioning */
+            top: 38vh; /* Adjust top position */
+            right: 10vw; /* Adjust right position */
+            font-size: 4.2vw;
+            background-color: rgb(255, 98, 0);
+            color: rgb(255, 255, 255);
+            padding: .25em;
+        }
     
     }
     
@@ -120,6 +149,36 @@ button:hover {
         .flex-container {
             flex-direction: column;
         }
+        .btn1 {
+            position: absolute; /* Change to absolute positioning */
+            top: 29vh;
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            font-size: 6vw;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: .25em;
+        }
+        .btn2 {
+            position: absolute; /* Change to absolute positioning */
+            top: 50vh;
+            left: 35%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            font-size: 2.4vw;
+            background-color: rgb(255, 0, 170);
+            color: rgb(251, 255, 0);
+            padding: .25em;
+        }
+        .btn3 {
+            position: absolute; /* Change to absolute positioning */
+            top: 41vh; /* Adjust top position */
+            right: 10vw; /* Adjust right position */
+            font-size: 3.2vw;
+            background-color: rgb(255, 98, 0);
+            color: rgb(255, 255, 255);
+            padding: .25em;
+        }
+        
     }
     
     @media screen and (min-width: 950px) {
