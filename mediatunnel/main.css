@@ -7,10 +7,65 @@ html{
 
 }
 
-body {
-    font-size: 1.6rem;
-    margin: 0;
+button {
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    z-index: 30;
+    text-transform: uppercase;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    position: absolute; /* Change to absolute positioning */
+    top: 29vh;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 3.5vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: .25em;
+}
+
+.btn1:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btn2 {
+    position: absolute; /* Change to absolute positioning */
+    top: 30vh;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 18px;
+    background-color: yellow;
+    color: rebeccapurple;
+    padding: .25em;
+}
+
+.btn2:hover {
+    background-color: rebeccapurple;
+    color: yellow;
+}
+
+.btn3 {
+    position: absolute; /* Change to absolute positioning */
+    top: 35vh; /* Adjust top position */
+    right: 2vw; /* Adjust right position */
+    font-size: 20px;
+    background-color: orange;
+    color: lightblue;
+    padding: .25em;
+}
+
+.btn3:hover {
+    background-color: lightblue;
+    color: orange;
+}
+
 
 .flex-container {
     display: flex;
@@ -18,13 +73,13 @@ body {
     height: 100vh;
 }
 
-.desktop-image--left,
-.tablet-image--left,
-.mobile-image--left{
+.desktop-image,
+.tablet-image,
+.mobile-image{
     display: none;
 }
 
-.desktop-image--left {
+.desktop-image {
     width: 50%;
     height: 100%;
     object-fit: cover;
@@ -32,115 +87,44 @@ body {
 }
 
 
-.tablet-image--left{
+.tablet-image{
     width: 100%;
     height: 50%;
     object-fit: cover;
     margin: auto 0;
-    }
+}
     
 
-.mobile-image--left{
+.mobile-image{
     width: 100%;
     height: 50%;
     object-fit: cover;
     margin: auto 0;
-    }
-        
-  
-
-
-.toggle-container {
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    width: 20rem;
-    height: 7rem;
-    border: 1px solid white;
-    background: transparent;
-    border-radius: 999rem;
-}
-    
-.toggle-circle {
-    width: 5.4rem;
-    height: 5.4rem;
-    border-radius: 999rem;
-    background: rgba(222, 222, 222, 0.5);
-    position: absolute;
-    left: .6.2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform .5s ease;
 }
         
-.toggle-container.is-active .toggle-circle {
-    transform: translateY(-50%) translateX(13rem);
-}
-
-
-
-
-
-
-
-
-
-
     
-@media screen and (max-width: 499px) {
-    .mobile-image--left,
-    .mobile-image--right{
-        display: block;
-    }
-    .flex-container {
-        flex-direction:column;
-    }
-
-.toggle-container{
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 19rem;
-        height: 52rem;
-        border: 1px solid white;
-        background: transparent;
-        border-radius: 999rem;
-    }
-    
-.toggle-circle {
-        width: 17.7rem;
-        height: 17.7rem;
-        border-radius: 999rem;
-        background: rgba(0, 0, 0,.5);
-        position: absolute;
-        left: 50%;
-        top: 0.5%;
-        transform: translateX(-50%);
-        transition: transform .5s ease;
-    }
-    
-    .toggle-container.is-active {
-        .toggle-circle {
-        transform: translateX(-50%) translateY(33.3rem);
-        }
-    }
-    }
-
-@media screen and (min-width: 500px) and (max-width:949px){
-    .tablet-image--left,
-    .tablet-image--right{
-        display: block;
-    }
-
-    .flex-container {
-        flex-direction:column;
-        }
-    }
-
-@media screen and (min-width: 950px){
-    .desktop-image--left,
-    .desktop-image--right{
+    @media screen and (max-width: 499px) {
+        .mobile-image {
             display: block;
+        }
+        .flex-container {
+            flex-direction: column;
+        }
+    
     }
-}
+    
+    @media screen and (min-width: 500px) and (max-width: 949px) {
+        .tablet-image {
+            display: block;
+        }
+        .flex-container {
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (min-width: 950px) {
+        .desktop-image {
+            display: block;
+        }
+    }
+    
