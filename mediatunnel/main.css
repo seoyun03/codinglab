@@ -18,79 +18,73 @@ body {
 }
 
 .desktop-image--left,
-.desktop-image--right,
 .tablet-image--left,
-.tablet-image--right,
-.mobile-image--left,
-.mobile-image--right{
+.mobile-image--left{
     display: none;
 }
 
-.desktop-image--left{
-    width: 58.3%;
+.desktop-image--left {
+    width: 50%;
     height: 100%;
     object-fit: cover;
-    }
+    margin: 0 auto;
+}
 
-.desktop-image--right{
-    width: 41.7%;
-    height: 100%;
-    object-fit: cover;
-    }
 
 .tablet-image--left{
     width: 100%;
     height: 50%;
     object-fit: cover;
+    margin: auto 0;
     }
     
-.tablet-image--right{
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-    }    
 
 .mobile-image--left{
     width: 100%;
     height: 30%;
     object-fit: cover;
+    margin: 0 auto;
     }
         
-.mobile-image--right{
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    }    
+  
 
 
-    .toggle-container{
-        position: fixed;
-        right: 10px; /* Adjust as needed for the distance from the right */
-        top: 10px; /* Adjust as needed for the distance from the top */
-        width: 20rem; /* Smaller width */
-        height: 7rem; /* Smaller height */
-        border: 1px solid white;
-        background: transparent;
-        border-radius: 999rem; /* You might want to adjust this for a smaller size */
-    }
+.toggle-container {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 20rem;
+    height: 7rem;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 999rem;
+}
     
-    .toggle-circle {
-        width: 5.4rem; /* Smaller width */
-        height: 5.4rem; /* Smaller height */
-        border-radius: 999rem; /* Keep it circular */
-        background: rgba(0, 0, 0,.5);
-        position: absolute;
-        left: .6.2rem; /* Adjust if needed */
-        top: 50%;
-        transform: translateY(-50%); /* Keeps it vertically centered */
-        transition: transform .5s ease;
-    }
+.toggle-circle {
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 999rem;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: .6.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .5s ease;
+}
         
-    .toggle-container.is-active .toggle-circle {
-        transform: translateY(-50%) translateX(13rem); /* Adjust translation for new size */
-    }
-    
-    
+.toggle-container.is-active .toggle-circle {
+    transform: translateY(-50%) translateX(13rem);
+}
+
+
+
+
+
+
+
+
+
+
     
 @media screen and (max-width: 499px) {
     .mobile-image--left,
