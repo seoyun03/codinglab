@@ -135,6 +135,32 @@ main {
 }
 
 @media screen and (max-width: 499px) {
+  .center {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 20px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+      -1px -1px 0 black,
+      1px -1px 0 black, 
+      -1px 1px 0 black, 
+      1px 1px 0 black;  
+    z-index: 1; 
+  }
+  .center-below {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 40px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+      -1px -1px 0 black,
+      1px -1px 0 black, 
+      -1px 1px 0 black, 
+      1px 1px 0 black;  
+    z-index: 1; 
+  }
   .grid-item {
     grid-column: span 2;
     width: 30%; /* Adjust the percentage to make the grid item smaller */
