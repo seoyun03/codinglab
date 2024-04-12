@@ -13,15 +13,11 @@ color: #f74c25;
 text-decoration: none;
 }
 
-
 img {
 width: 20px; 
 height: auto; 
 }
 
-.hidden{
-  display: none!important;
-}
 
 .top-text-container {
   position: fixed;
@@ -38,8 +34,6 @@ height: auto;
   justify-content: space-between;
   z-index: 1;
 }
-
-
 
 
 .filter {
@@ -60,7 +54,7 @@ margin: 0 10px;
 background-color: rgba(1, 255, 18, 0); 
 color: #f74c25;
 text-decoration: none;
-border-radius: 1px;
+border-radius: 20px;
 border: 2px solid #f74c25; 
 }
 
@@ -80,33 +74,6 @@ border: 2px solid #f74c25;
   background-color: #f74c25;
   color: black;
   cursor: pointer;
-}
-
-.dashboard_inputs {
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-}
-
-.dashboard_inputs {
-  transition: background-color 0.6s, color 0.6s;
-}
-
-
-
-
-.text1 {
-font-size: 100px;
-font-family: "elza", sans-serif;
-color: #f74c25;
-font-weight: 800;
-line-height: 1.5; 
-position:absolute;
-top: 60px;
-left: 100px;
-max-width: 60%;
 }
 
 
@@ -139,8 +106,6 @@ opacity: 1;
 }
 
 
-
-
 .caption {
 position: absolute;
 top: 50%;
@@ -164,26 +129,45 @@ opacity: 1;
 
 @media screen and (max-width: 499px) {
 
-    .text1 {
-      font-size: 65px;
-      font-family: "elza", sans-serif;
-      color: #f74c25;
-      font-weight: 800;
-      line-height: 1.5;
+
+    .filter {
       position: fixed;
-      top: 15%; 
+      top: 10%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 60%;
-    }
-    .horizontal-line {
-      border-top: 2px solid #f74c25;
-      height: 330px;
-      position: absolute;
-      width: 90%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+      transform: translate(-50%, 0);
+      text-align: center;
+      z-index: 2;
+      }
+      
+      .filter a {
+      display: inline-block;
+      font-family: "elza", sans-serif;
+      font-size: 9px;
+      padding: 3px 10px;
+      margin: 0 10px;
+      background-color: rgba(1, 255, 18, 0); 
+      color: #f74c25;
+      text-decoration: none;
+      border-radius: 50px;
+      border: 1px solid #f74c25; 
+      }
+      
+
+      .top-text-container {
+        position: fixed;
+        font-family: "ITC Garamond W01 Book Narrow", Garamond, serif;
+        font-weight: 800;
+        font-size: 25px;
+        color: #f74c25;
+        top: 0; /* 화면 상단에 붙이기 */
+        left: 50%; /* 왼쪽 여백을 무시하고 화면의 중앙을 기준으로 위치 */
+        transform: translateX(-50%); /* 요소의 너비의 반만큼 왼쪽으로 이동하여 수평 가운데 정렬 */
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+      }
     .grid-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -207,22 +191,7 @@ opacity: 1;
       transition: opacity 0.3s ease-in-out;
       line-height: 1;
     }
-    .top-text-container {
-      position: fixed; 
-      font-family: "elza", sans-serif;
-      font-weight: 800;
-      font-size: 13px;
-      color: #f74c25;
-      top: -3.6px;
-      left: 0;
-      width: 100vw;
-      padding: 20px;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      z-index: 1;
-    
-    }
+
     img {
       width: 15px; 
       height: auto; 
