@@ -13,8 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
   
+        // 이미지 경로를 상대 경로에서 절대 경로로 수정
+        const imagePath = `../json data/assets/${foodItem.image}`;
+  
         gridItem.innerHTML = `
-          <img src="${foodItem.image}" alt="${foodItem.name}">
+          <img src="${imagePath}" alt="${foodItem.name}">
           <div class="caption">
             <p><strong>Name:</strong> ${foodItem.name}</p>
             <p><strong>Shop:</strong> ${foodItem.shop}</p>
@@ -25,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
         gridContainer.appendChild(gridItem);
       });
+      
     }
   
     const filterButtons = document.querySelectorAll('.filter a');

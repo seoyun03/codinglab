@@ -7,49 +7,49 @@
                 "shop": "Twosome Place",
                 "location": "9, Dosan-daero 37-gil",
                 "price": "₩6500",
-                "image": "../kpop/assets/1.png"
+                "image": "../jsondata/assets/k1.png"
             },
             {
                 "name": "Chocolate Mochi",
                 "shop": "Yuki Mochi",
                 "location": "240 Donggyo-ro, Mapo-gu",
                 "price": "₩4500",
-                "image": "../kpop/assets/2.png"
+                "image": "../jsondata/assets/k2.png"
             },
             {
-                "name": "Plain Bagel",
-                "shop": "London Bagel Museum",
-                "location": "33, Eonju-ro 168-gil",
-                "price": "₩3800",
-                "image": "../kpop/assets/3.png"
+                "name": "Peak",
+                "shop": "Nudake",
+                "location": "50, House DoSan, Apgujeong-ro 46-gil",
+                "price": "₩28000",
+                "image": "../jsondata/assets/k3.png"
             },
             {
                 "name": "Camel Coffee",
                 "shop": "Camel Coffee",
                 "location": "16-8, Dosan-daero 45-gil",
                 "price": "₩6000",
-                "image": "../kpop/assets/4.png"
+                "image": "../jsondata/assets/k4.png"
             },
             {
                 "name": "Leon",
                 "shop": "Ourth Yogurt",
                 "location": "153 Neungdong-ro, Gwangjin-gu",
                 "price": "₩6500",
-                "image": "../kpop/assets/5.png"
+                "image": "../jsondata/assets/k5.png"
             },
             {
                 "name": "Ragu Alla Bolognese",
                 "shop": "Two Hundred",
                 "location": "46, Gangnam-daero 158-gil",
                 "price": "₩23000",
-                "image": "../kpop/assets/6.png"
+                "image": "../jsondata/assets/k6.png"
             },
             {
                 "name": "God Fajita",
                 "shop": "God Eat",
                 "location": "24, Eonju-ro 164-gil",
                 "price": "₩23000",
-                "image": "../kpop/assets/7.png"
+                "image": "../jsondata/assets/k7.png"
             }
         ]
     },
@@ -61,49 +61,49 @@
                 "shop": "Starbucks",
                 "location": "111 University Pl",
                 "price": 5.43,
-                "image": "../kpop/assets/1.png"
+                "image": "../jsondata/assets/n1.png"
             },
             {
                 "name": "Matcha Mochi Parfeit",
                 "shop": "Nana's green tea",
                 "location": "1250 Broadway",
                 "price": 13.95,
-                "image": "../kpop/assets/2.png"
+                "image": "../jsondata/assets/n2.png"
             },
             {
                 "name": "Bronte Burger",
                 "shop": "Little Ruby's West Village",
                 "location": "225 west 4th street",
                 "price": 17,
-                "image": "../kpop/assets/3.png"
+                "image": "../jsondata/assets/n3.png"
             },
             {
                 "name": "Black Sugar Boba",
                 "shop": "Tiger Sugar",
                 "location": "42 W 32nd St",
                 "price": 5.97,
-                "image": "../kpop/assets/4.png"
+                "image": "../jsondata/assets/n4.png"
             },
             {
                 "name": "Wanpo Milk Tea",
                 "shop": "Wanpo Tea Shop",
                 "location": "37 E 8th St",
                 "price": 5.25,
-                "image": "../kpop/assets/5.png"
+                "image": "../jsondata/assets/n5.png"
             },
             {
                 "name": "Signature Favorite Bagel",
                 "shop": "Essa Bagel",
                 "location": "108 W 32nd St",
                 "price": 15.95,
-                "image": "../kpop/assets/6.png"
+                "image": "../jsondata/assets/n6.png"
             },
             {
                 "name": "Chocolate Milk",
                 "shop": "Blue Stripes Cacao Shop",
                 "location": "28 E 13th St",
                 "price": 5,
-                "image": "../kpop/assets/7.png"
+                "image": "../jsondata/assets/n7.png"
             }
         ]
     },
@@ -115,42 +115,42 @@
                 "shop": "La La Land",
                 "location": "1426 montana ave #1",
                 "price": 6.3,
-                "image": "../kpop/assets/1.png"
+                "image": "../jsondata/assets/l1.png"
             },
             {
                 "name": "Hamburger",
                 "shop": "In&Out",
                 "location": "7009 sunset blvd,",
                 "price": 3.15,
-                "image": "../kpop/assets/2.png"
+                "image": "../jsondata/assets/l2.png"
             },
             {
                 "name": "Spicy Miso Ramen",
                 "shop": "Daikokuya Little Tokyo",
                 "location": "327 1st St",
                 "price": 18,
-                "image": "../kpop/assets/3.png"
+                "image": "../jsondata/assets/l3.png"
             },
             {
                 "name": "Strawberry Glaze Skin Smoothie",
                 "shop": "Erewhon",
                 "location": "339 N Beverly Dr",
                 "price": 18,
-                "image": "../kpop/assets/4.png"
+                "image": "../jsondata/assets/l4.png"
             },
             {
                 "name": "Ispahan",
                 "shop": "Laduree",
                 "location": "311 N Beverly Dr",
                 "price": 11,
-                "image": "../kpop/assets/5.png"
+                "image": "../jsondata/assets/l5.png"
             },
             {
                 "name": "Eggs Salmone",
                 "shop": "Urth Cafe",
                 "location": "267 S Beverly Dr",
                 "price": 19.75,
-                "image": "../kpop/assets/6.png"
+                "image": "../jsondata/assets/l6.png"
             }
         ]
     }

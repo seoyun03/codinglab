@@ -64,19 +64,19 @@ border-radius: 1px;
 border: 2px solid #f74c25; 
 }
 
-.filter a.active-kpop {
+.filter a.active-korea {
   background-color:#f74c25;
   color: black;
   cursor: pointer;
 }
 
-.filter a.active-rb {
+.filter a.active-newyork {
   background-color:#f74c25; 
   color: black;
   cursor: pointer;
 }
 
-.filter a.active-hiphop {
+.filter a.active-la {
   background-color: #f74c25;
   color: black;
   cursor: pointer;
@@ -96,65 +96,6 @@ border: 2px solid #f74c25;
 
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-    grid-row-gap: 10px; 
-    grid-column-gap: 0px; 
-    justify-content: center;
-    align-items: center; 
-    margin-top: 200px;
-    transition: all 0.5s ease;
-}
-
-.gallery-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  margin-top: 280px;
-  overflow: hidden; 
-}
-.gallery {
-  display: flex;
-  animation: marquee 100s linear infinite; 
-}
-
-.image {
-  margin: 10px;
-  position: relative;
-}
-.image img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease; 
-}
-.image:hover img {
-  transform: scale(1.1);
-}
-
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.gallery:hover {
-  animation-play-state: paused;
-}
-
-.gallery:not(:hover) {
-  animation-play-state: running;
-}
-
-
 
 .text1 {
 font-size: 100px;
@@ -171,7 +112,7 @@ max-width: 60%;
 
 .grid-container {
 display: grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(4, 1fr);
 grid-gap: 5px;
 grid-row-gap: 20px; 
 grid-column-gap: 0px; 
@@ -193,8 +134,8 @@ transition: transform .3s ease, opacity 0.2s ease;
 }
 
 .grid-item:hover img {
-transform: scale(1.5);
-opacity: 0.5;
+transform: scale(1.2);
+opacity: 1;
 }
 
 
@@ -219,19 +160,7 @@ transition: opacity 0.3s ease-in-out;
 opacity: 1; 
 }
 
-.audio {
-position: absolute;
-bottom: 0;
-left: 0;
-display: none;
-}
 
-.grid-item:hover .audio {
-display: block;
-}
-.audio::-webkit-media-controls {
-display: none !important;
-}
 
 @media screen and (max-width: 499px) {
 
