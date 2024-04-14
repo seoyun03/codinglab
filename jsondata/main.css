@@ -115,9 +115,10 @@ font-family: "elza", sans-serif;
 font-size: 13px;
 color: white;
 padding: 10px;
-border-radius: 5px;
+border-radius: 10px;
 opacity: 0; 
 transition: opacity 0.3s ease-in-out;
+background-color: rgba(0, 0, 0, 0.4);
 }
 
 
